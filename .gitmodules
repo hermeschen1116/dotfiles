@@ -1,0 +1,3 @@
+[submodule "/Users/hermeschen/.config/nano/syntax-highlight"]
+	path = /Users/hermeschen/.config/nano/syntax-highlight
+	url = https://github.com/scopatz/nanorc.git

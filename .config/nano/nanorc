@@ -1,0 +1,7 @@
+set tabsize 4
+set tabstospaces
+set autoindent
+set trimblanks
+set linenumbers
+set constantshow
+include ~/.config/nano/syntax-highlight/*.nanorc
