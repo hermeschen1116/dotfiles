@@ -1,7 +1,14 @@
+tap "birdgg/affine"
 tap "homebrew/bundle"
-tap "homebrew/cask-fonts"
 tap "homebrew/cask-versions"
 tap "homebrew/services"
+tap "modularml/packages"
+# General-purpose data compression with high compression ratio
+brew "xz"
+# Cryptography and SSL/TLS Toolkit
+brew "openssl@3"
+# Library for command-line editing
+brew "readline"
 # Download with resuming and segmented downloading
 brew "aria2"
 # Clone of cat(1) with syntax highlighting and Git integration
@@ -22,20 +29,22 @@ brew "ccache"
 brew "cheat"
 # Cloudflare Tunnel client (formerly Argo Tunnel)
 brew "cloudflared"
+# GNU File, Shell, and Text utilities
+brew "coreutils", link: false
 # Secure runtime for JavaScript and TypeScript
 brew "deno"
-# Pack, ship and run any application as a lightweight container
-brew "docker", args: ["HEAD"]
 # More intuitive version of du in rust
 brew "dust", args: ["HEAD"]
-# Modern replacement for 'ls'
-brew "exa", args: ["HEAD"]
+# Modern, maintained replacement for ls
+brew "eza"
 # Simple, fast and user-friendly alternative to find
 brew "fd", args: ["HEAD"]
 # Play, record, convert, and stream audio and video
 brew "ffmpeg"
 # Command-line fuzzy finder written in Go
 brew "fzf", args: ["HEAD"]
+# GitHub command-line tool
+brew "gh", args: ["HEAD"]
 # Distributed revision control system
 brew "git", args: ["HEAD"]
 # Syntax-highlighting pager for git and diff output
@@ -44,6 +53,8 @@ brew "git-delta", args: ["HEAD"]
 brew "git-flow-avh", args: ["HEAD"]
 # Git extension for versioning large files
 brew "git-lfs"
+# GNU implementation of the famous stream editor
+brew "gnu-sed"
 # GNU Pretty Good Privacy (PGP) package
 brew "gnupg"
 # Ping, but with a graph
@@ -58,10 +69,8 @@ brew "just", args: ["HEAD"]
 brew "lazygit", args: ["HEAD"]
 # Conversion library
 brew "libiconv"
-# Linux virtual machines
-brew "lima"
-# Parsing Expression Grammars For Lua
-brew "lpeg"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.11"
 # Mac App Store command-line interface
 brew "mas"
 # Development kit for the Java programming language
@@ -70,10 +79,14 @@ brew "openjdk"
 brew "maven"
 # Free (GNU) replacement for the Pico text editor
 brew "nano"
+# Improved Nano Syntax Highlighting Files
+brew "nanorc", args: ["HEAD"]
 # Fast, highly customisable system info script
 brew "neofetch", args: ["HEAD"]
 # Ambitious Vim-fork focused on extensibility and agility
 brew "neovim", args: ["HEAD"]
+# Modern shell for the GitHub era
+brew "nushell", args: ["HEAD"]
 # Development kit for the Java programming language
 brew "openjdk@17"
 # 7-Zip (high compression file archiver) implementation
@@ -84,6 +97,8 @@ brew "pinentry-mac"
 brew "python@3.9"
 # Search tool like grep and The Silver Searcher
 brew "ripgrep", args: ["HEAD"]
+# Extremely fast tool to remove dupes and other lint from your filesystem
+brew "rmlint"
 # Utility that provides fast incremental file transfer
 brew "rsync"
 # Safe, concurrent, practical language
@@ -94,8 +109,10 @@ brew "smartmontools"
 brew "speedtest-cli"
 # Cross-shell prompt for astronauts
 brew "starship"
-# Lightweight BitTorrent client
-brew "transmission-cli"
+# Tool Command Language
+brew "tcl-tk"
+# Cross-platform Rust rewrite of the GNU coreutils
+brew "uutils-coreutils", args: ["HEAD"]
 # JavaScript toolchain manager for reproducible environments
 brew "volta", args: ["HEAD"]
 # Command-line interface to the WakaTime api
@@ -106,22 +123,25 @@ brew "wget"
 brew "xdg-ninja", args: ["HEAD"]
 # Fork of youtube-dl with additional features and fixes
 brew "yt-dlp"
+# Pluggable terminal workspace, with terminal multiplexer as the base feature
+brew "zellij"
+# General-purpose lossless data-compression library
+brew "zlib", args: ["HEAD"]
 # Shell extension to navigate your filesystem faster
 brew "zoxide"
 # UNIX shell (command interpreter)
 brew "zsh", args: ["HEAD"]
+cask "affine-canary"
 # Android SDK component
 cask "android-platform-tools"
-# Cross platform SQL editor and database management app
-cask "beekeeper-studio"
+# Chromium based browser
+cask "arc"
+# Universal chat app powered by Matrix
+cask "beeper"
 # Tool to list all active shortcuts of the current application
 cask "cheatsheet"
-# Voice and text chat software
-cask "discord-canary"
-# Collaborative team software
-cask "figma-beta"
-# Web browser
-cask "firefox-nightly"
+# OpenJDK distribution from Amazon
+cask "corretto8"
 cask "font-jf-open-huninn"
 # Developer targeted fonts with a high number of glyphs
 cask "font-meslo-lg-nerd-font"
@@ -129,16 +149,22 @@ cask "font-meslo-lg-nerd-font"
 cask "font-noto-nerd-font"
 # Developer targeted fonts with a high number of glyphs
 cask "font-sauce-code-pro-nerd-font"
+# Java IDE by JetBrains
+cask "intellij-idea"
 # Early access development kit for the Java programming language
 cask "java-beta"
-# App to write, plan, collaborate, and get organized
-cask "notion"
 # Knowledge base that works on top of a local folder of plain text Markdown files
 cask "obsidian"
+# Client program for the OpenVPN Access Server
+cask "openvpn-connect"
 # Minecraft launcher
 cask "prismlauncher"
 # Control your tools with a few keystrokes
 cask "raycast"
+# Replacement for RCDefaultApps, written in Swift
+cask "swiftdefaultappsprefpane"
+# Resources for Wacom tablets
+cask "wacom-tablet"
 # Rust-based terminal
 cask "warp"
 # Multiplayer code editor
@@ -147,7 +173,6 @@ cask "zed"
 cask "zoom"
 mas "AdGuard for Safari", id: 1440147259
 mas "Bitwarden", id: 1352778147
-mas "DuckDuckGo Privacy for Safari", id: 1482920575
 mas "Keynote", id: 409183694
 mas "Lightweight PDF", id: 1450640351
 mas "LINE", id: 539883307
@@ -157,4 +182,4 @@ mas "Pages", id: 409201541
 mas "PiPifier", id: 1160374471
 mas "Save to Pocket", id: 1477385213
 mas "Save to Raindrop.io", id: 1549370672
-mas "Todoist", id: 585829637
+mas "Surfshark", id: 1437809329
