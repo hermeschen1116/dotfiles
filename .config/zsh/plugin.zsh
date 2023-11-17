@@ -14,6 +14,7 @@ zplug "sobolevn/wakatime-zsh-plugin", from:github
 zplug "mollifier/zload", from:github
 
 zplug "mattberther/zsh-pyenv", from:github, lazy:true, if:"[[ -n $(which pyenv) ]]"
+zplug "plugins/pyenv", from:oh-my-zsh
 zplug "plugins/rust", from:oh-my-zsh, if:"[[ -n $(which rustup) ]]"
 zplug "g-plane/pnpm-shell-completion", hook-build:"./zplug.zsh", defer:2, if:"[[ -n $(which pnpm) ]]"
 zplug "plugins/fzf", from:oh-my-zsh, if:"[[ -n $(which fzf) ]]"

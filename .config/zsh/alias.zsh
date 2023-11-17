@@ -10,3 +10,5 @@ alias zsh_alias="nano $ZDOTDIR/alias.zsh && source $ZDOTDIR/alias.zsh && neofetc
 alias zsh_path="nano $ZDOTDIR/path.zsh && source $ZDOTDIR/path.zsh && neofetch"
 alias zsh_plugin="nano $ZDOTDIR/plugin.zsh && source $ZDOTDIR/plugin.zsh"
 alias zsh_func="nano $ZDOTDIR/func.zsh && source $ZDOTDIR/func.zsh"
+alias wget="wget --hsts-file='$XDG_DATA_HOME/wget-hsts'"
+alias adb="HOME='$XDG_DATA_HOME'/android adb"
