@@ -131,9 +131,10 @@ brew "zlib", args: ["HEAD"]
 brew "zoxide"
 # UNIX shell (command interpreter)
 brew "zsh", args: ["HEAD"]
-cask "affine-canary"
 # Android SDK component
 cask "android-platform-tools"
+# Local-first and end-to-end encrypted notes app
+cask "anytype"
 # Chromium based browser
 cask "arc"
 # Universal chat app powered by Matrix
@@ -153,8 +154,8 @@ cask "font-sauce-code-pro-nerd-font"
 cask "intellij-idea"
 # Early access development kit for the Java programming language
 cask "java-beta"
-# Knowledge base that works on top of a local folder of plain text Markdown files
-cask "obsidian"
+# Privacy-first, open-source platform for knowledge sharing and management
+cask "logseq"
 # Client program for the OpenVPN Access Server
 cask "openvpn-connect"
 # Minecraft launcher
