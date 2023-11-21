@@ -1,6 +1,6 @@
 source $ZPLUG_HOME/init.zsh
 
-zplug "tranzystorek-io/zellij-zsh", if:"[[ '$TERM_PROGRAM' != 'WarpTerminal' && -n $(which zellij) ]]"
+zplug "tranzystorek-io/zellij-zsh", if:"[[ '$OSTYPE' != *darwin* && -n $(which zellij) ]]"
 zplug "plugins/starship", from:oh-my-zsh, if:"[[ -n '$(which starship)' ]]"
 
 zplug "qoomon/zsh-lazyload", from:github
@@ -10,7 +10,6 @@ zplug "hlissner/zsh-autopair", from:github, defer:2
 zplug "zsh-users/zsh-syntax-highlighting", from:github
 zplug "zsh-users/zsh-history-substring-search", from:github
 zplug "changyuheng/zsh-interactive-cd", from:github
-zplug "sobolevn/wakatime-zsh-plugin", from:github
 zplug "mollifier/zload", from:github
 
 zplug "mattberther/zsh-pyenv", from:github, lazy:true, if:"[[ -n $(which pyenv) ]]"
