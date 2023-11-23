@@ -7,6 +7,8 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
+    "theme": "Ayu Dark",
+    "vim_mode": true,
     "features": {
         "copilot": false
     },
@@ -19,7 +21,7 @@
     "soft_wrap": "preferred_line_length",
     "hour_format": "hour24",
     "telemetry": {
-      "diagnostics": false,
-      "metrics": false
+      "diagnostics": true,
+      "metrics": true
     },
 }

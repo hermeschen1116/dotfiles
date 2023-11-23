@@ -13,6 +13,7 @@ zplug "changyuheng/zsh-interactive-cd", from:github
 zplug "sobolevn/wakatime-zsh-plugin", from:github
 zplug "mollifier/zload", from:github
 
+zplug "plugins/brew", from:oh-my-zsh, if:"[[ '$OSTYPE' == *darwin* && -n '$(which brew)' ]]"
 zplug "mattberther/zsh-pyenv", from:github, lazy:true, if:"[[ -n $(which pyenv) ]]"
 zplug "plugins/pyenv", from:oh-my-zsh
 zplug "plugins/rust", from:oh-my-zsh, if:"[[ -n $(which rustup) ]]"
@@ -22,7 +23,6 @@ zplug "plugins/zoxide", from:oh-my-zsh, if:"[[ -n $(which zoxide) ]]"
 zplug "plugins/gpg-agent", from:oh-my-zsh, if:"[[ -n $(which gpg) ]]"
 zplug "plugins/git-auto-fetch", from:oh-my-zsh, if:"[[ -n $(which git) ]]"
 zplug "plugins/gitignore", from:oh-my-zsh
-zplug "plugins/brew", from:oh-my-zsh, if:"[[ '$OSTYPE' == *darwin* && -n '$(which brew)' ]]"
 
 if ! zplug check --verbose; then
     printf "Install? [y/N]: "

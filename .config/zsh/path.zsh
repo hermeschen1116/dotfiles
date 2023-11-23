@@ -1,3 +1,5 @@
+# homebrew
+eval "$(/opt/homebrew/bin/brew shellenv)"
 # cargo
 export PATH="$CARGO_HOME/bin:$PATH"
 # pyenv
