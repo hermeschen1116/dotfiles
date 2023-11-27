@@ -15,5 +15,3 @@ eval "$(bw completion --shell zsh); compdef _bw bw;"
 
 # debug zsh startup time
 # zprof
-
-source /Users/hermeschen/.config/broot/launcher/bash/br
