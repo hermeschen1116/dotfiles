@@ -12,8 +12,9 @@ source $ZDOTDIR/plugin.zsh
 source "$XDG_CONFIG_HOME/broot/launcher/bash/br"
 # bitwarden-cli
 eval "$(bw completion --shell zsh); compdef _bw bw;"
+# fzf zsh compeletion
+source /usr/share/fzf-tab-completion/zsh/fzf-zsh-completion.sh
+bindkey '^I' fzf_completion
 
 # debug zsh startup time
 # zprof
-
-source /home/hermeschen/.config/broot/launcher/bash/br

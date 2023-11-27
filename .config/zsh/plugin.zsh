@@ -1,6 +1,6 @@
 source $ZPLUG_HOME/init.zsh
 
-zplug "tranzystorek-io/zellij-zsh", if:"[[ '$OSTYPE' != *darwin* && -n $(which zellij) ]]"
+#zplug "tranzystorek-io/zellij-zsh", if:"[[ '$OSTYPE' != *darwin* && -n $(which zellij) ]]"
 zplug "plugins/starship", from:oh-my-zsh, if:"[[ -n '$(which starship)' ]]"
 
 zplug "qoomon/zsh-lazyload", from:github

@@ -2,7 +2,7 @@
 export LANG="en_US.UTF-8"
 export LC_ALL='en_US.UTF-8'
 export LC_CTYPE="UTF-8"
-export ARCHFLAGS="-arch $(uname -m)"
+#export ARCHFLAGS="-arch $(uname -m)"
 export CC='clang'
 export EDITOR="nano"
 # export PAGER="delta"
@@ -61,6 +61,7 @@ export CUDA_CACHE_PATH="$XDG_CACHE_HOME/nv"
 export GOPATH="$XDG_DATA_HOME/go"
 export _JAVA_OPTIONS=-Djava.util.prefs.userRoot="$XDG_CONFIG_HOME/java"
 export PARALLEL_HOME="$XDG_CONFIG_HOME/parallel"
+export GLFW_IM_MODULE=ibus
 
 # alias
 # alias config="$(which git) --git-dir=$HOME/.cfg/ --work-tree=$HOME"
