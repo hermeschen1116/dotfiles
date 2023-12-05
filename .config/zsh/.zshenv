@@ -55,6 +55,8 @@ export MAVEN_REPOSITORY="$XDG_CONFIG_HOME/maven/repository"
 export GRADLE_USER_HOME="$XDG_DATA_HOME/gradle"
 export FZF_BASE="$(which fzf)"
 export PYTHONSTARTUP="$XDG_CONFIG_HOME/python/pythonrc"
+export SSH_ASKPASS="$HOMEBREW_PREFIX/bin/touch2sudo"
+export DISPLAY=0
 
 # alias
 # alias config="$(which git) --git-dir=$HOME/.cfg/ --work-tree=$HOME"
